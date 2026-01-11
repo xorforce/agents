@@ -5,7 +5,7 @@ This folder collects agent helpers so they are easy to reuse in other repos or s
 This is heavily inspired from [@steipete's Agent-scripts](https://github.com/steipete/agent-scripts/tree/main) and [@Dimillian's Public Skills repo](https://github.com/Dimillian/Skills).
 
 ## Syncing With Other Repos
-- Treat this repo as the canonical mirror for the shared guardrail helpers. Whenever you edit `scripts/committer` or `scripts/docs-list.ts` in any repo, copy the change here and then back out to every other repo that carries the same helpers so they stay byte-identical.
+- Treat this repo as the canonical mirror for the shared guardrail helpers. Whenever you edit `scripts/committer.sh` in any repo, copy the change here and then back out to every other repo that carries the same helpers so they stay byte-identical.
 - When someone says “sync agent scripts,” pull the latest changes here, ensure downstream repos have the pointer-style `AGENTS.MD`, copy any helper updates into place, and reconcile differences before moving on.
 - Keep every file dependency-free and portable: the scripts must run in isolation across repos. Do not add `tsconfig` path aliases, shared source folders, inline tiny helpers or duplicate the minimum code needed so the mirror stays self-contained.
 
@@ -16,7 +16,7 @@ This is heavily inspired from [@steipete's Agent-scripts](https://github.com/ste
 - When updating the shared instructions, edit `agents/AGENTS.MD`, mirror the change into `~/AGENTS.MD` (Codex global), and let downstream repos continue referencing the pointer.
 
 ## Sync Expectations
-- This repository is the canonical mirror for the guardrail helpers used in mcporter and other Sweetistics projects. Whenever you edit `scripts/committer`, `scripts/docs-list.ts`, or related guardrail files in another repo, copy the changes back here immediately (and vice versa) so the code stays byte-identical.
+- This repository is the canonical mirror for the guardrail helpers used in mcporter and other Sweetistics projects. Whenever you edit `scripts/committer.sh`, or related guardrail files in another repo, copy the changes back here immediately (and vice versa) so the code stays byte-identical.
 - When someone asks to “sync agent scripts,” update this repo, compare it against the active project, and reconcile differences in both directions before continuing.
 
 ## @xorforce Agent Instructions (pointer workflow)
