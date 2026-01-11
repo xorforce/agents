@@ -2,7 +2,7 @@
 
 This folder collects agent helpers so they are easy to reuse in other repos or share during onboarding. Treat these rules as final until overriden from a child repo's `AGENTS.md`
 
-This is heavily inspired from p[@steipete's Agent-scripts](https://github.com/steipete/agent-scripts/tree/main) and [@Dimillian's Public Skills repo](https://github.com/Dimillian/Skills).
+This is heavily inspired from [@steipete's Agent-scripts](https://github.com/steipete/agent-scripts/tree/main) and [@Dimillian's Public Skills repo](https://github.com/Dimillian/Skills).
 
 ## Syncing With Other Repos
 - Treat this repo as the canonical mirror for the shared guardrail helpers. Whenever you edit `scripts/committer` or `scripts/docs-list.ts` in any repo, copy the change here and then back out to every other repo that carries the same helpers so they stay byte-identical.
